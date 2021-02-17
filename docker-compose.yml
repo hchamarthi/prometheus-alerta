@@ -5,7 +5,7 @@ services:
     image: prom/prometheus
     volumes:
       - ./config:/prometheus
-      - ./data/prometheus:/data
+      - ./data/prometheus:/data:rw
     command:
       - '--config.file=/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/data'
