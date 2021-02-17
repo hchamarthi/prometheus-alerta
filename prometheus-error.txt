@@ -1,0 +1,30 @@
+prometheus_1    | level=info ts=2021-02-17T10:54:57.479Z caller=main.go:326 msg="No time or size retention was set so using the default time retention" duration=15d
+prometheus_1    | level=info ts=2021-02-17T10:54:57.479Z caller=main.go:364 msg="Starting Prometheus" version="(version=2.24.1, branch=HEAD, revision=e4487274853c587717006eeda8804e597d120340)"
+prometheus_1    | level=info ts=2021-02-17T10:54:57.479Z caller=main.go:369 build_context="(go=go1.15.6, user=root@0b5231a0de0f, date=20210120-00:09:36)"
+prometheus_1    | level=info ts=2021-02-17T10:54:57.479Z caller=main.go:370 host_details="(Linux 3.10.0-957.27.2.el7.x86_64 #1 SMP Mon Jul 29 17:46:05 UTC 2019 x86_64 1c8d8afa1fc2 securonix.net)"
+prometheus_1    | level=info ts=2021-02-17T10:54:57.479Z caller=main.go:371 fd_limits="(soft=1024000, hard=1024000)"
+prometheus_1    | level=info ts=2021-02-17T10:54:57.479Z caller=main.go:372 vm_limits="(soft=unlimited, hard=unlimited)"
+prometheus_1    | level=error ts=2021-02-17T10:54:57.479Z caller=query_logger.go:87 component=activeQueryTracker msg="Error opening query log file" file=/data/queries.active err="open /data/queries.active: permission denied"
+prometheus_1    | panic: Unable to create mmap-ed active query log
+prometheus_1    |
+prometheus_1    | goroutine 1 [running]:
+prometheus_1    | github.com/prometheus/prometheus/promql.NewActiveQueryTracker(0x7fffe7e63f7f, 0x5, 0x14, 0x31b9c00, 0xc00087fb30, 0x31b9c00)
+prometheus_1    |       /app/promql/query_logger.go:117 +0x4cf
+prometheus_1    | main.main()
+prometheus_1    |       /app/cmd/prometheus/main.go:400 +0x53ec
+prometheus-alerta_prometheus_1 exited with code 2
+prometheus_1    | level=info ts=2021-02-17T10:55:10.804Z caller=main.go:326 msg="No time or size retention was set so using the default time retention" duration=15d
+prometheus_1    | level=info ts=2021-02-17T10:55:10.804Z caller=main.go:364 msg="Starting Prometheus" version="(version=2.24.1, branch=HEAD, revision=e4487274853c587717006eeda8804e597d120340)"
+prometheus_1    | level=info ts=2021-02-17T10:55:10.804Z caller=main.go:369 build_context="(go=go1.15.6, user=root@0b5231a0de0f, date=20210120-00:09:36)"
+prometheus_1    | level=info ts=2021-02-17T10:55:10.804Z caller=main.go:370 host_details="(Linux 3.10.0-957.27.2.el7.x86_64 #1 SMP Mon Jul 29 17:46:05 UTC 2019 x86_64 1c8d8afa1fc2 securonix.net)"
+prometheus_1    | level=info ts=2021-02-17T10:55:10.804Z caller=main.go:371 fd_limits="(soft=1024000, hard=1024000)"
+prometheus_1    | level=info ts=2021-02-17T10:55:10.804Z caller=main.go:372 vm_limits="(soft=unlimited, hard=unlimited)"
+prometheus_1    | level=error ts=2021-02-17T10:55:10.804Z caller=query_logger.go:87 component=activeQueryTracker msg="Error opening query log file" file=/data/queries.active err="open /data/queries.active: permission denied"
+prometheus_1    | panic: Unable to create mmap-ed active query log
+prometheus_1    |
+prometheus_1    | goroutine 1 [running]:
+prometheus_1    | github.com/prometheus/prometheus/promql.NewActiveQueryTracker(0x7ffe1fe66f7f, 0x5, 0x14, 0x31b9c00, 0xc000836270, 0x31b9c00)
+prometheus_1    |       /app/promql/query_logger.go:117 +0x4cf
+prometheus_1    | main.main()
+prometheus_1    |       /app/cmd/prometheus/main.go:400 +0x53ec
+prometheus-alerta_prometheus_1 exited with code 2
